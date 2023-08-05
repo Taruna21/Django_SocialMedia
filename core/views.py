@@ -53,7 +53,6 @@ def index(request):
 
     suggestions_username_profile_list = list(chain(*username_profile_list))
 
-
     return render(request, 'index.html', {'user_profile': user_profile, 'posts':feed_list, 'suggestions_username_profile_list': suggestions_username_profile_list[:4]})
 
 @login_required(login_url='signin')
@@ -187,7 +186,7 @@ def settings(request):
             user_profile.save()
         
         return redirect('settings')
-    return render(request, 'setting.html', {'user_profile': user_profile})
+    return render(request, 'settings.html', {'user_profile': user_profile})
 
 def signup(request):
 

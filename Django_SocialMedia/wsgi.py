@@ -15,4 +15,4 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Django_SocialMedia.settings')
 
 application = get_wsgi_application()
 
-app = application
+
